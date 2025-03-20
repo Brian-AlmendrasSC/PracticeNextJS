@@ -1,3 +1,5 @@
 export default function ForgotPaswordPage() {
-    return <h1>ForgotPaswordPage</h1>
+    return (
+    <a href="/" className="previous">&laquo; Back</a>
+    )
 }
