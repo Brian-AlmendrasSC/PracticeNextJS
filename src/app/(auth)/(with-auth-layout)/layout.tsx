@@ -1,3 +1,9 @@
+import { title } from "process";
+
+export const metadata={
+    title: "With auth layout",
+    description: "this for the practice"
+}
 export  default function AuthLayout({
     children,
 }:{
