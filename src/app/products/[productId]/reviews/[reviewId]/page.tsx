@@ -16,7 +16,7 @@ export const generateMetadata=async ({params}:Props): Promise<Metadata>=>{
         }, 100);
     })
     return {
-        title: `Product is ${params.productId} and ${title}`
+        title: `${title}`
     }
 }
 
