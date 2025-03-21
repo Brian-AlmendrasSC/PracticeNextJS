@@ -6,6 +6,7 @@ export default function Home() {
       <Link href="/login">Login</Link>
       <Link href="/register">Register</Link>
       <Link href="/forgot-password">Forgot password</Link>
+      <Link href="/blog">Blog</Link>
     </>
 )
 }
