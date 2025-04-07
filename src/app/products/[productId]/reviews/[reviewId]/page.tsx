@@ -10,6 +10,9 @@ type Props={
     }
 }
 
+function getRandomInt(count:number) {
+    return Math.floor(Math.random()*count)
+}
 // export const generateMetadata=async ({params}:Props): Promise<Metadata>=>{
 //     const title= await new Promise(resolve=>{
 //         setTimeout(() => {
@@ -29,7 +32,7 @@ const params=useParams<{reviewId:string,productId:string}>();
 
     if(parseInt(params.reviewId) > 100){
         notFound();
-    }else if(parseInt(params.reviewId)==100){
+    }else if(getRandomInt(3)==1){
         throw new Error("This review doesn't exist or can't permited the access");
     }
     else{
